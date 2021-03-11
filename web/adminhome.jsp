@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>admin home Page</title>
+        <title>adminn home Page</title>
     </head>
     <body>
         <h1>QUIZ NOT LET
