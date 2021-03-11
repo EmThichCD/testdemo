@@ -35,6 +35,7 @@ public class CreateAccountController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         String url = ERROR;
+        int t=0;
         try {
             String email = request.getParameter("txtemail");
             String name = request.getParameter("txtname");
