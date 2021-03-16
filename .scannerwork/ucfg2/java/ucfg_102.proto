@@ -1,0 +1,42 @@
+
+1utils.DBUtil#getConnection()Ljava/sql/Connection;M
+CC:/Users/tuanv/OneDrive/Desktop/testdemo/src/java/utils/DBUtil.java (*"1*²	
+1M
+CC:/Users/tuanv/OneDrive/Desktop/testdemo/src/java/utils/DBUtil.java (|
+z
+M
+CC:/Users/tuanv/OneDrive/Desktop/testdemo/src/java/utils/DBUtil.java (
+connjava.sql.Connection"__id*
+""î
+ë
+M
+CC:/Users/tuanv/OneDrive/Desktop/testdemo/src/java/utils/DBUtil.java (E
+%0java.lang.Class"<java.lang.Class#forName(Ljava/lang/String;)Ljava/lang/Class;*"
+java.lang.Class*0.
+,com.microsoft.sqlserver.jdbc.SQLServerDriver»
+¸
+M
+CC:/Users/tuanv/OneDrive/Desktop/testdemo/src/java/utils/DBUtil.java (\
+urljava.lang.String"__id*HF
+Djdbc:sqlserver://localhost:1433;databaseName=Assignment2_HuynhTuanVu«
+¨
+M
+CC:/Users/tuanv/OneDrive/Desktop/testdemo/src/java/utils/DBUtil.java (=
+%1java.sql.Connection"qjava.sql.DriverManager#getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;*"
+java.sql.DriverManager*
+
+urljava.lang.String*
+sa*
+
+123456’
+
+M
+CC:/Users/tuanv/OneDrive/Desktop/testdemo/src/java/utils/DBUtil.java (=
+connjava.sql.Connection"__id*
+
+%1java.sql.Connection"n
+M
+CC:/Users/tuanv/OneDrive/Desktop/testdemo/src/java/utils/DBUtil.java (
+
+connjava.sql.ConnectionB"
+utils.DBUtil
