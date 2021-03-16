@@ -68,7 +68,7 @@
     nbproject/build-impl.xml file. 
 
     -->
-    <property name="sonar.host.url" value="http://localhost:9000" />
+    <property name="sonar.host.url" value="https://sonarcloud.io/" />
     <property name="sonar.projectKey" value="org.sonarqube:sonarqube-scanner-ant" />
     <property name="sonar.projectName" value="Example of SonarScanner for Ant Usage" />
     <property name="sonar.projectVersion" value="1.0" />
