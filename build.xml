@@ -78,7 +78,7 @@
     <property name="sonar.projectName" value="Example of SonarScanner for Ant Usage" />
     <property name="sonar.projectVersion" value="1.0" />
     <property name="sonar.sources" value="src" />
-    <property name="sonar.java.binaries" value="target" />
+    <property name="sonar.java.binaries" value="*.class" />
     <property name="sonar.java.libraries" value="lib/*.jar" />
 	
     
