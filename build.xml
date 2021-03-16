@@ -68,9 +68,7 @@
     nbproject/build-impl.xml file. 
 
     -->
-    <property name="src.dir" value="src" />
-    <property name="build.dir" value="target" />
-    <property name="classes.dir" value="${build.dir}/classes" />
+    
 	
     <!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) -->
     <property name="sonar.host.url" value="http://localhost:9000" />
@@ -83,18 +81,6 @@
     <property name="sonar.java.binaries" value="target/classes" />
     <property name="sonar.java.libraries" value="lib/*.jar" />
 	
-    <target name="clean">
-		<delete dir="${build.dir}" />
-	</target>
-
-	<target name="init">
-		<mkdir dir="${build.dir}" />
-		<mkdir dir="${classes.dir}" />
-	</target>
-
-	<target name="compile" depends="init">
-		<javac srcdir="${src.dir}" destdir="${classes.dir}" fork="true" debug="true" includeAntRuntime="false" />
-	</target>
     
     <target name="sonar" depends="compile">
         <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
@@ -105,5 +91,4 @@
         <!-- Execute SonarScanner for Ant Analysis -->
         <sonar:sonar />
     </target>
-    <target name="all" depends="clean,compile,sonar" />
 </project>
