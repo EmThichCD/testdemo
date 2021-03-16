@@ -68,21 +68,26 @@
     nbproject/build-impl.xml file. 
 
     -->
+    
+	
+    <!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) -->
     <property name="sonar.host.url" value="http://localhost:9000" />
+
+    <!-- Define the Sonar properties -->
     <property name="sonar.projectKey" value="org.sonarqube:sonarqube-scanner-ant" />
     <property name="sonar.projectName" value="Example of SonarScanner for Ant Usage" />
     <property name="sonar.projectVersion" value="1.0" />
-    <property name="sonar.language" value="java" />
     <property name="sonar.sources" value="src" />
-    <property name="sonar.java.binaries" value="build" />
+    <property name="sonar.java.binaries" value="target" />
     <property name="sonar.java.libraries" value="lib/*.jar" />
+	
     <target name="sonar">
-    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
-        <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
-        <classpath path="path/to/sonar/ant/task/lib/sonarqube-ant-task-*.jar" />
-    </taskdef>
+        <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+            <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+            <classpath path="path/to/sonar/ant/task/lib/sonarqube-ant-task-*.jar" />
+        </taskdef>
  
-    <!-- Execute SonarScanner for Ant Analysis -->
-    <sonar:sonar />
-</target>
+        <!-- Execute SonarScanner for Ant Analysis -->
+        <sonar:sonar />
+    </target>
 </project>
